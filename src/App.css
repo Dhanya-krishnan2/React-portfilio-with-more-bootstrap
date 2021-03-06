@@ -7,6 +7,9 @@
   --primary-white: #fff;
   --primary-pink: rgb(216, 20, 200);
   --primary-dark: rgb(255, 255, 255, 0);
+  --primary-red: red;
+  --primary-hover-green: green;
+
 
 }
 
@@ -14,6 +17,9 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 /****** Styling nav logo *****/
+nav {
+  z-index: 2;
+}
 .dhanya-logo {
 
   width: 8.12rem;
@@ -55,5 +61,63 @@ nav ul li {
 
   border-top: 0.287rem solid var(--primary-pink);
 
+ }
+ /*styling header*/
+
+.header-wrapper{
+  position: relative;
+  background: url(background.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+
+}
+.main-info h1 {
+  color: var(--primary-pink);
+  text-transform: uppercase;
+}
+/*Typed text design*/
+.typed-text{
+  color: var(--primary-white);
+  font-size: 2rem;
+}
+/*designing button*/
+
+.btn-main-offer {
+
+  border: 1px solid var(--primary-red);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.76rem 0.76rem 0.76rem 0.76rem;
+  color: var(--primary-white);
+}
+
+/*to add the styles  of particle we need look in to insepecter and then copy the clas name and style it*/
+
+ .tsparticles-canvas-el {
+
+   position: absolute;
+   height: 100vh;
+   width: 100vw;
+   z-index: 1;
+ }
+ .btn-main-offer:hover {
+   text-decoration: none;
+   background-color: var(--primary-hover-green);
+   transition: .2s ease-in-out;
  }
  
