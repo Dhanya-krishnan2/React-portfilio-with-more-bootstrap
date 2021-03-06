@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+/*creating variable for color*/
+/*we are adding black to the top so that it wont visible and avoid the jump*/
+:root {
+  --primary-white: #fff;
+  --primary-pink: rgb(216, 20, 200);
+  --primary-dark: rgb(255, 255, 255, 0);
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/****** Styling nav logo *****/
+.dhanya-logo {
+
+  width: 8.12rem;
+
+}
+/* nav-links menu styles */
+nav a.nav-link {
+
+  /* font-weight: 500; */
+  /* letter-spacing: 0.03px; */
+  cursor: pointer;
+  font-size: large;
+
+}
+nav ul li {
+  text-transform: uppercase;
+}
+.navbar-nav > li > a {
+  color: var(--primary-white) !important;
+  margin-left: 0.76rem;
+  margin-right: 0.76rem;
+  border-top:  0.287rem solid var(--primary-dark);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.nav-link {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
+.navbar-brand{
 
-.App-link {
-  color: #61dafb;
-}
+  max-width: 17rem;
+  padding: 0 !important;
+  height: 6rem !important;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
 }
+/*designig a hover effect for the menu links*/
+
+ .navbar-nav> li> a.after, .navbar-nav >li> a.active:focus {
+
+  border-top: 0.287rem solid var(--primary-pink);
+
+ }
+ 
